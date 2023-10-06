@@ -27,6 +27,10 @@ def dataAnalysis():
 
 
 
+dataAnalysis()
+
+
+
 
 
 
