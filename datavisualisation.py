@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
-import missingno as msno
 from feature_engineering import featureEngineering
 
 def dataVisualisation():
@@ -18,9 +17,9 @@ def dataVisualisation():
     mp = sns.heatmap(corr, linewidth = 1 ,  annot=True, cmap="coolwarm", fmt=".2f")
     plt.show()
 
-    #missing no visualisation
-    msno.bar(df)
-    plt.show()
+    # #missing no visualisation
+    # msno.bar(df)
+    # plt.show()
 
     #boxplot
     for col in num_types:
