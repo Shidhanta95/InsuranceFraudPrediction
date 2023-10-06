@@ -56,7 +56,7 @@ def preprocessing():
         df[name].fillna(df[name].mode(), inplace = True)
     
     #columsn to drop 
-    to_drop = ['Unnamed: 0','policy_number','policy_bind_date','policy_state','insured_zip','incident_location','incident_date',
+    to_drop = ['policy_number','policy_bind_date','policy_state','insured_zip','incident_location','incident_date',
            'incident_state','incident_city','insured_hobbies','auto_make','auto_model','auto_year', '_c39']
     df.drop(to_drop, inplace = True, axis = 1)
 
