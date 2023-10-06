@@ -21,7 +21,7 @@ def SMOTEUpsampling(df):
 def featureEngineering():
     df = preprocessing()
     df = SMOTEUpsampling(df)
-    df.to_csv("insurance_claims.csv", index = False)
+    df.to_csv("insurance_claims_final.csv", index = False)
     return df
 
 featureEngineering()
